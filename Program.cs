@@ -64,6 +64,20 @@ namespace InClassAssignment3
 
             string readText = File.ReadAllText("filename.txt");  // Read the contents of the file
             Console.WriteLine(readText);  // Output the content
+            //using Try Catch Finally
+            try
+            {
+                int[] myNumbers = { 1, 2, 3 };
+                Console.WriteLine(myNumbers[10]);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Something went wrong.");
+            }
+            finally
+            {
+                Console.WriteLine("The 'try catch' is finished.");
+            }
         }
     }
     class Car
